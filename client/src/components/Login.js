@@ -15,9 +15,6 @@ function Login(img) {
         
         window.location.replace('https://wrike-daily.vercel.app/login')
 
-        if(cookies.data){
-            navigate('/dashboard')
-        }
     }
 
     if (isLoading) {
