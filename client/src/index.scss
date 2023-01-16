@@ -1,0 +1,36 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@mixin centerFilled {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+  #login, #error_page {
+    @include centerFilled;
+    
+  }
+
+  .spinner {
+    @include centerFilled;
+  }
+
+  #profile {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #ffffff;
+    }
+  }
+}
