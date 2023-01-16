@@ -19,8 +19,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/', require('./routes/LoginRoute'))
-app.use('/', require('./routes/ContactRoute'))
-app.use('/', require('./routes/TaskRoute'))
 
 app.listen(port, () => {
     console.log(`Server is running at port ${port}`)
