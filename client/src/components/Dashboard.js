@@ -11,7 +11,7 @@ function Dashboard() {
     const [cookies, setCookie] = useContext(UserContext)
 
     const accessToken = cookies.data.accessToken
-
+    console.log('redirect successful')
     const handleLogout = () => {
         setCookie('data', '')
         navigate('/')
