@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const Tasks = ({ accessToken, contactId }) => {
     const [tasks, setTasks] = useState()
-    // const newTask = 'IEADVMHZJMBRONOE'
+
     const date = new Intl.DateTimeFormat("fr-CA", { year: "numeric", month: "2-digit", day: "2-digit" }).format(Date.now())
 
     useEffect(() => {
