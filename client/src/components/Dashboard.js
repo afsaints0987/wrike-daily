@@ -15,7 +15,7 @@ function Dashboard() {
     const handleLogout = () => {
         setCookie('data', '')
         navigate('/')
-        axios.get('http://localhost:3001/logout')
+        axios.get('https://wrike-daily.vercel.app/logout')
     }
 
     useEffect(() => {

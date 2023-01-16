@@ -9,7 +9,7 @@ function Login(img) {
     const handleLogin = () => {
         setIsLoading(true)
         
-        window.location.replace('http://localhost:3001/login')
+        window.location.replace('https://wrike-daily.vercel.app/login')
     }
 
     if (isLoading) {
