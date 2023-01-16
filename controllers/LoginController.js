@@ -36,7 +36,7 @@ const Callback = async (req, res) => {
             refreshToken
         })
 
-        // res.redirect('https://wrike-daily.netlify.app/dashboard')
+        res.redirect('https://wrike-daily.netlify.app/dashboard')
 
     } catch (error) {
         console.log(error)

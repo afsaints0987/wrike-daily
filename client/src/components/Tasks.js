@@ -21,7 +21,7 @@ const Tasks = ({ accessToken, contactId }) => {
             }
         }
         getTasks();
-    }, [contactId, accessToken, date, newTask])
+    }, [contactId, accessToken, date])
 
     return (
         <>
