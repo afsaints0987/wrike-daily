@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom'
 
 function Login(img) {
     const [isLoading, setIsLoading] = useState(false)
-    const [cookies, setCookie] = useContext(UserContext)
+    const [cookies] = useContext(UserContext)
     const navigate = useNavigate()
-    
+
     const handleLogin = () => {
         setIsLoading(true)
         
