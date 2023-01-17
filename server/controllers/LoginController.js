@@ -36,7 +36,7 @@ const Callback = async (req, res) => {
             refreshToken
         })
 
-        // res.redirect('https://wrike-daily.vercel.app/dashboard')
+        res.redirect('https://wrike-daily.vercel.app/dashboard')
 
     } catch (error) {
         console.log(error)
