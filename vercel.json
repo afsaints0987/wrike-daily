@@ -6,18 +6,19 @@
       "use": "@now/node"
     },
     {
-      "src": "package.json",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "client/build/**/*",
+      "src": "client/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "client/build/index.html"
+      "dest": "index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/index.html"
     }
+
   ]
 }
