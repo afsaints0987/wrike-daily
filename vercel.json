@@ -6,8 +6,8 @@
       "use": "@now/node"
     },
     {
-      "src": "client/**",
-      "use": "@vercel/static"
+      "src": "client/public/**",
+      "use": "@now/static"
     }
   ],
   "routes": [
