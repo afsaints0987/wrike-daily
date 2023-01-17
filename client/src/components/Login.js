@@ -13,7 +13,7 @@ function Login(img) {
     const handleLogin = () => {
         setIsLoading(true)
         
-        window.location.replace('https://wrike-daily.vercel.app/login')
+        window.location.replace('https://wrike-daily-api.vercel.app/login')
 
     }
 
