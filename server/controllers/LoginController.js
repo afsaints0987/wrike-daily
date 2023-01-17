@@ -1,7 +1,7 @@
 const axios = require('axios')
 const clientId = process.env.CLIENT_ID
 const clientSecret = process.env.CLIENT_SECRET
-const redirectUri = 'https://wrike-daily.vercel.app/api/callback';
+const redirectUri = 'https://wrike-daily-api.vercel.app/api/callback';
 
 const Login = (req, res) => {
     const authorizationUrl = `https://login.wrike.com/oauth2/authorize/v4?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}`;
