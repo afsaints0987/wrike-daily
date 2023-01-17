@@ -1,7 +1,7 @@
 const axios = require('axios')
 const clientId = process.env.CLIENT_ID
 const clientSecret = process.env.CLIENT_SECRET
-const redirectUri = 'https://wrike-daily.vercel.app/callback';
+const redirectUri = 'https://wrike-daily.vercel.app/api/callback';
 
 const Login = (req, res) => {
     const authorizationUrl = `https://login.wrike.com/oauth2/authorize/v4?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}`;
@@ -75,7 +75,7 @@ const Refresh = async (req, res) => {
 
 const Logout = async (req, res) => {
     res.clearCookie()
-    res.redirect('https://wrike-daily.netlify.app/')
+    res.redirect('https://wrike-daily.vercel.app/')
 }
 
 module.exports = {

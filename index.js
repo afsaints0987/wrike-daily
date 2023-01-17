@@ -23,7 +23,7 @@ app.get('*', (req, res) => {
 });
 
 
-app.use('/', require('./routes/LoginRoute'))
+app.use('/api', require('./routes/LoginRoute'))
 
 app.listen(port, () => {
     console.log(`Server is running at port ${port}`)
